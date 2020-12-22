@@ -1,0 +1,28 @@
+{% extends 'AplikacjaBadaniaWadWzroku/../AplikacjaBadaniaWadWzroku/base.html' %}
+{% load static i18n %}
+
+{% block title %}
+    {% trans 'Информация про ' %}{{ test }}
+{% endblock %}
+
+{% block content %}
+    <h1 id="firstHeading" class="firstHeading" lang="en">{% trans test %}</h1>
+    <hr>
+    <p> {{ disease_description }}</p>
+
+    <h2>{% trans 'Симптомы' %}</h2>
+    <ol>
+    {% for symptom in disease_symptoms %}
+    <li>{{ symptom }}</li>
+    {% endfor %}
+    </ol>
+
+    <h2>{% trans 'Лечение' %}</h2>
+    <ol>
+    {% for treatment in disease_treatment %}
+    <li>{{ treatment }}</li>
+    {% endfor %}
+    </ol>
+
+{% endblock %}
+

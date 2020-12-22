@@ -1,0 +1,14 @@
+[
+  {
+    "model": "AplikacjaBadaniaWadWzroku.TestResults",
+    "pk": 1,
+    "fields": {
+      "astigmatism_test_result": "",
+      "color_blindness_test_result": 0,
+      "visual_acuity_test_result": 0,
+      "macular_degeneration_test_result": "",
+      "dry_eye_test_result": 0,
+      "accommodation_test_result": 0
+    }
+  }
+]

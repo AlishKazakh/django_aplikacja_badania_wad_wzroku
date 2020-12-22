@@ -1,0 +1,21 @@
+{% extends 'AplikacjaBadaniaWadWzroku/base.html' %}
+{% load static i18n %}
+{% block title %}
+    {% trans 'Страница Упражнений' %}
+{% endblock %}
+
+{% block content %}
+    <h1>{% trans 'Страница Упражнений' %}</h1>
+    <div id="page-wrap">
+        {% for exercise in exercises_context %}
+            <div>
+                <h2>{% trans 'Упражнение №' %}{{ exercise.exercise_number }}.</h2>
+                <p>{{ exercise.text_exercise }}</p>
+                {% if exercise.image_exercise != '' %}
+                    <img src="{{ exercise.image_exercise.url }}" class="img-responsive" style="width: 60%; float: left; margin-right: 10px;" />
+                {% endif %}
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
+{% endblock %}

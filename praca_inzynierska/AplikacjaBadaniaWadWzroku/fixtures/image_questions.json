@@ -1,0 +1,272 @@
+[
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 1,
+    "fields": {
+      "image": "test_image/plate_1_12.png",
+      "option_one": "22",
+      "option_two": "12",
+      "option_three": "21",
+      "option_four": "42",
+      "answer": "12",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 1
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 2,
+    "fields": {
+      "image": "test_image/plate_2_8.png",
+      "option_one": "8",
+      "option_two": "Здесь нет чисел",
+      "option_three": "3",
+      "option_four": "2",
+      "answer": "8",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 2
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 3,
+    "fields": {
+      "image": "test_image/plate_3_29.png",
+      "option_one": "28",
+      "option_two": "29",
+      "option_three": "Здесь нет чисел",
+      "option_four": "70",
+      "answer": "29",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 3
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 4,
+    "fields": {
+      "image": "test_image/plate_4_5.png",
+      "option_one": "2",
+      "option_two": "6",
+      "option_three": "Здесь нет чисел",
+      "option_four": "5",
+      "answer": "5",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 4
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 5,
+    "fields": {
+      "image": "test_image/plate_5_3.png",
+      "option_one": "8",
+      "option_two": "Здесь нет чисел",
+      "option_three": "3",
+      "option_four": "5",
+      "answer": "3",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 5
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 6,
+    "fields": {
+      "image": "test_image/plate_6_15.png",
+      "option_one": "15",
+      "option_two": "Здесь нет чисел",
+      "option_three": "16",
+      "option_four": "17",
+      "answer": "15",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 6
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 7,
+    "fields": {
+      "image": "test_image/plate_7_74.png",
+      "option_one": "77",
+      "option_two": "74",
+      "option_three": "21",
+      "option_four": "Здесь нет чисел",
+      "answer": "74",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 7
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 8,
+    "fields": {
+      "image": "test_image/plate_8_6.png",
+      "option_one": "6",
+      "option_two": "Здесь нет чисел",
+      "option_three": "8",
+      "option_four": "5",
+      "answer": "6",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 8
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 9,
+    "fields": {
+      "image": "test_image/plate_9_45.png",
+      "option_one": "Здесь нет чисел",
+      "option_two": "45",
+      "option_three": "15",
+      "option_four": "75",
+      "answer": "45",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 9
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 10,
+    "fields": {
+      "image": "test_image/plate_10_5.png",
+      "option_one": "6",
+      "option_two": "3",
+      "option_three": "5",
+      "option_four": "Здесь нет чисел",
+      "answer": "5",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 10
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 11,
+    "fields": {
+      "image": "test_image/plate_11_7.png",
+      "option_one": "1",
+      "option_two": "7",
+      "option_three": "4",
+      "option_four": "Здесь нет чисел",
+      "answer": "7",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 11
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 12,
+    "fields": {
+      "image": "test_image/plate_12_16.png",
+      "option_one": "16",
+      "option_two": "15",
+      "option_three": "18",
+      "option_four": "Здесь нет чисел",
+      "answer": "16",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 12
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 13,
+    "fields": {
+      "image": "test_image/plate_13_73.png",
+      "option_one": "13",
+      "option_two": "43",
+      "option_three": "73",
+      "option_four": "Здесь нет чисел",
+      "answer": "73",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 13
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 14,
+    "fields": {
+      "image": "test_image/plate_14_nothing.png",
+      "option_one": "2",
+      "option_two": "5",
+      "option_three": "6",
+      "option_four": "Здесь нет чисел",
+      "answer": "Здесь нет чисел",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 14
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 15,
+    "fields": {
+      "image": "test_image/plate_15_nothing.png",
+      "option_one": "15",
+      "option_two": "5",
+      "option_three": "45",
+      "option_four": "Здесь нет чисел",
+      "answer": "Здесь нет чисел",
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 15
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 16,
+    "fields": {
+      "image": "test_image/amsler_grid.jpg",
+      "option_one": "Линии волнистые и кривые",
+      "option_two": "Квадраты отличаются размерами или формой",
+      "option_three": "Линии отсутствуют, размыты или бесцветны",
+      "option_four": "Все одинаково",
+      "answer": "",
+      "test": "macular_degeneration",
+      "language": "russian",
+      "question_number": 1
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 17,
+    "fields": {
+      "image": "test_image/astigmatism_1.jpg",
+      "option_one": "Имеются размытые линии",
+      "option_two": "Все линии одинаковы",
+      "option_three": "",
+      "option_four": "",
+      "answer": "",
+      "test": "astigmatism",
+      "language": "russian",
+      "question_number": 1
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWzroku.ImageTest",
+    "pk": 18,
+    "fields": {
+      "image": "test_image/astigmatism_2.png",
+      "option_one": "Имеются размытые линии",
+      "option_two": "Все линии одинаковы",
+      "option_three": "",
+      "option_four": "",
+      "answer": "",
+      "test": "astigmatism",
+      "language": "russian",
+      "question_number": 2
+    }
+  }
+]

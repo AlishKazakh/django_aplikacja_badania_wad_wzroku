@@ -1,0 +1,79 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+
+
+*					{ margin: 0; padding: 0; }
+body				{ font: 14px Georgia, serif; }
+
+h1                  { margin: 25px 0; font: 40px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
+
+h2                  { margin: 25px 0; font: 30px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
+
+
+
+p { margin: 25px 0;
+    font: 15px Georgia, Serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+ul li { margin: 25px 0;
+    font: 15px Georgia, Serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+select.languages { border:40px solid transparent}
+
+#page-wrap		    { width: 500px; margin: 0 auto; }
+
+
+
+input.submit-test {
+    display:inline-block;
+    padding:1em 1em;
+    margin:0.5em;
+    border:0.15em solid #CCCCCC;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Segoe UI','Roboto',sans-serif;
+    font-weight:400;
+    color:#000000;
+    background-color:#CCCCCC;
+    text-align:center;
+    position:relative;
+}
+
+input.submit-test:hover{
+    border-color:#7a7a7a;
+}
+input.submit-test:active{
+    background-color:#999999;
+}
+
+ol {
+   margin: 0 0 10px 20px;
+}
+
+ol li {
+   margin: 0 0 20px 0;
+}
+
+ol li div {
+   padding: 4px 0;
+}
+
+h3 {
+   font-size: 17px; margin: 0 0 1px 0; color: #666666;
+}
+
+img.img-responsive {
+    height: auto;
+    width: 200%;
+    float: left;
+    margin-right: 10px;
+}

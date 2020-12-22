@@ -1,0 +1,232 @@
+[
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 1,
+    "fields": {
+      "text_exercise": "Крепко зажмурить глаза на 3-5 сек., а затем открыть глаза 3-5 сек., повторить 6-8 раз. Данное упражнение укрепляет мышцы век. Способствует кровообращению и расслаблению мышц глаз.",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 1
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 2,
+    "fields": {
+      "text_exercise": "Смотреть прямо перед собой 2-3 сек. Поставить палец правой руки на средней линии лица на расстоянии 25-30 см. от глаза, перевести взгляд на конец пальца и смотреть на него 3-5 сек. Опустить руки. Повторить 10-12 раз. Упражнение снимает утомление, облегчает зрительную работу на близком расстоянии.",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 2
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 3,
+    "fields": {
+      "text_exercise": "Быстро моргать в течении 1-2 минут. Способствует улучшению кровообращения.",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 3
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 4,
+    "fields": {
+      "text_exercise": "Вытянуть руки вперед, смотреть на конец пальца вытянутой руки, положенной на средней линии лица, медленно приближать палец, не сводя с него глаз до тех пор, пока палец не начнет двоиться. Повторить 6-8 раз. Облегчает работу на близком расстоянии.",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 4
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 5,
+    "fields": {
+      "text_exercise": "Закрыть веки, массировать их с помощью круговых движений пальца. Повторить в течение 1 минуты. Упражнение расслабляет мышцы и улучшает кровообращение.",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 5
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 6,
+    "fields": {
+      "text_exercise": "Поставить палец правой руки по средней линии лица на расстоянии 25-30 см. от глаза, смотреть обоими глазами на конец пальца 3-5 сек., прикрыть ладонью левой руки глаз на 3-5 сек., убрать ладонь, смотреть двумя глазами на конец пальца 3-5 сек. Поставить палец левой руки по средней линии на расстоянии 25-30 см., прикрыть ладонью правой руки правый глаз на 3-5 сек., убрать ладонь, смотреть обои глазами на конец пальца 3-5 сек. Повторить 5-6 раз. Упражнение укрепляет мышцы обоих глаз (бинокулярное зрение).",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 6
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 7,
+    "fields": {
+      "text_exercise": "Отвести руку в правую сторону, медленно передвигать палец полусогнутой руки справа налево и при неподвижной голове следить глазами за пальцем, медленно передвигать палец полусогнутой руки слева направо и при неподвижной голове следить глазами за пальцем. Повторить 10-15 раз. Упражнение укрепляет мышцы глаз горизонтального действия и совершенствует их координацию.",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 7
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 8,
+    "fields": {
+      "text_exercise": "Тремя пальцами каждой руки легко нажать на верхнее веко, спустя 1-2 сек. Снять пальцы с век. Повторить 3-4 раза. Упражнение укрепляет циркуляцию внутриглазной жидкости.",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 8
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 9,
+    "fields": {
+      "text_exercise": "Делаем точку из пластилина и лепим на стекло. Выбираем за окном далекий объект, несколько секунд смотрим вдаль, потом переводим взгляд на точку. Позже можно усложнить нагрузки – фокусироваться на четырех разноудаленных объектах.",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 9
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 10,
+    "fields": {
+      "text_exercise": "Тремя пальцами каждой руки легко нажмите на верхние веки, через 1-2 секунды снимите пальцы с век. Повторите 3 раза. Улучшает циркуляцию внутриглазной жидкости.",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 10
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 11,
+    "fields": {
+      "text_exercise": "Дважды в день, утром и вечером, ополаскиваем глаза. Утром – сначала ощутимо горячей водой (не обжигаясь!), затем холодной. Перед сном все в обратном порядке: промываем холодной, потом горячей водой.",
+      "image_exercise": "",
+      "language": "russian",
+      "exercise_number": 11
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 12,
+    "fields": {
+      "text_exercise": "Смотрим вверх-вниз с максимальной амплитудой.",
+      "image_exercise": "test_image/exercise1.png",
+      "language": "russian",
+      "exercise_number": 12
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 13,
+    "fields": {
+      "text_exercise": "Чертим круг по часовой стрелке и обратно.",
+      "image_exercise": "test_image/exercise2.png",
+      "language": "russian",
+      "exercise_number": 13
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 14,
+    "fields": {
+      "text_exercise": "Рисуем глазами диагонали.",
+      "image_exercise": "test_image/exercise3.png",
+      "language": "russian",
+      "exercise_number": 14
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 15,
+    "fields": {
+      "text_exercise": "Рисуем взглядом квадрат.",
+      "image_exercise": "test_image/exercise4.png",
+      "language": "russian",
+      "exercise_number": 15
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 16,
+    "fields": {
+      "text_exercise": "Взгляд идет по дуге – выпуклой и вогнутой.",
+      "image_exercise": "test_image/exercise5.png",
+      "language": "russian",
+      "exercise_number": 16
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 17,
+    "fields": {
+      "text_exercise": "Обводим взглядом ромб.",
+      "image_exercise": "test_image/exercise6.png",
+      "language": "russian",
+      "exercise_number": 17
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 18,
+    "fields": {
+      "text_exercise": "Рисуем глазами бантики.",
+      "image_exercise": "test_image/exercise7.png",
+      "language": "russian",
+      "exercise_number": 18
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 19,
+    "fields": {
+      "text_exercise": "Рисуем букву S - сначала в горизонтальном положении, потом в вертикальном.",
+      "image_exercise": "test_image/exercise8.png",
+      "language": "russian",
+      "exercise_number": 19
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 20,
+    "fields": {
+      "text_exercise": "Чертим глазами вертикальные дуги, сначала по часовой стрелке, потом – против.",
+      "image_exercise": "test_image/exercise9.png",
+      "language": "russian",
+      "exercise_number": 20
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 21,
+    "fields": {
+      "text_exercise": "Переводим взгляд из одного угла в другой по диагоналям квадрата.",
+      "image_exercise": "test_image/exercise10.png",
+      "language": "russian",
+      "exercise_number": 21
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 22,
+    "fields": {
+      "text_exercise": "Сводим зрачки к переносице изо всех сил, приблизив палец к носу.",
+      "image_exercise": "test_image/exercise11.png",
+      "language": "russian",
+      "exercise_number": 22
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Exercises",
+    "pk": 23,
+    "fields": {
+      "text_exercise": "Часто-часто моргаем веками – как бабочка машет крылышками.",
+      "image_exercise": "test_image/exercise12.png",
+      "language": "russian",
+      "exercise_number": 23
+    }
+  }
+]

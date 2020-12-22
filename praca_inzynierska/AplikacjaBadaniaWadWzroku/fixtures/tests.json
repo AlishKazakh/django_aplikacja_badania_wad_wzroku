@@ -1,0 +1,750 @@
+[
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 1,
+    "fields": {
+      "question": "Часто ли Вы чувствуете наличие инородного объекта в глазу?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "dry eye",
+      "language": "russian",
+      "question_number": 1
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 2,
+    "fields": {
+      "question": "Чувствительны ли Ваши глаза к ветру, экрану компьютера и обогревателям?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "dry eye",
+      "language": "russian",
+      "question_number": 2
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 3,
+    "fields": {
+      "question": "Часто ли Вы наблюдаете зуд в глазах?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "dry eye",
+      "language": "russian",
+      "question_number": 3
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 4,
+    "fields": {
+      "question": "Часто ли Вы чувствуете боль в глазах?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "dry eye",
+      "language": "russian",
+      "question_number": 4
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 5,
+    "fields": {
+      "question": "У Вас часто слезятся глаза?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "dry eye",
+      "language": "russian",
+      "question_number": 5
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 6,
+    "fields": {
+      "question": "Часто ли у Вас бывает покраснение глаз?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "dry eye",
+      "language": "russian",
+      "question_number": 6
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 7,
+    "fields": {
+      "question": "Часто ли Вы моргаете?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "dry eye",
+      "language": "russian",
+      "question_number": 7
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 8,
+    "fields": {
+      "question": "Часто ли Вы наблюдаете размытость зрения?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "dry eye",
+      "language": "russian",
+      "question_number": 8
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 9,
+    "fields": {
+      "question": "Часто ли Вы чувствуете напряженность глаз?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "dry eye",
+      "language": "russian",
+      "question_number": 9
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 10,
+    "fields": {
+      "question": "Часто ли Вы испытываете сложности в концентрации во время чтения/работы за компьютером?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "accommodation",
+      "language": "russian",
+      "question_number": 1
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 11,
+    "fields": {
+      "question": "Быстро ли утомляются Ваши глаза?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "accommodation",
+      "language": "russian",
+      "question_number": 2
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 12,
+    "fields": {
+      "question": "Часто ли колеблется Ваше зрение в течение дня?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "accommodation",
+      "language": "russian",
+      "question_number": 3
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 13,
+    "fields": {
+      "question": "Часто ли ухудшается Ваше зрение после работы с компьютером?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "accommodation",
+      "language": "russian",
+      "question_number": 4
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 14,
+    "fields": {
+      "question": "Часто ли бывает у Вас слезоточение без особых на то причин?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "accommodation",
+      "language": "russian",
+      "question_number": 5
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 15,
+    "fields": {
+      "question": "Часто ли бывает у Вас покраснение глаз?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "accommodation",
+      "language": "russian",
+      "question_number": 6
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 16,
+    "fields": {
+      "question": "Часто ли Ваше зрение вблизи становится слегка размытым/двоящимся?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "accommodation",
+      "language": "russian",
+      "question_number": 7
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 17,
+    "fields": {
+      "question": "Часто ли возникают у Вас боли в надбровной области?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "accommodation",
+      "language": "russian",
+      "question_number": 8
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 18,
+    "fields": {
+      "question": "Часто ли возникают у Вас боли в глазах?",
+      "image": "",
+      "option_one": "Часто",
+      "option_two": "Иногда",
+      "option_three": "Редко",
+      "option_four": "Никогда",
+      "answer": "",
+      "size": 0,
+      "test": "accommodation",
+      "language": "russian",
+      "question_number": 9
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 19,
+    "fields": {
+      "question": "E",
+      "image": "",
+      "option_one": "F",
+      "option_two": "L",
+      "option_three": "E",
+      "option_four": "P",
+      "answer": "E",
+      "size": 75,
+      "test": "snellen",
+      "language": "",
+      "question_number": 1
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 20,
+    "fields": {
+      "question": "F",
+      "image": "",
+      "option_one": "F",
+      "option_two": "L",
+      "option_three": "E",
+      "option_four": "P",
+      "answer": "F",
+      "size": 37,
+      "test": "snellen",
+      "language": "",
+      "question_number": 2
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 21,
+    "fields": {
+      "question": "O",
+      "image": "",
+      "option_one": "C",
+      "option_two": "O",
+      "option_three": "D",
+      "option_four": "P",
+      "answer": "O",
+      "size": 25,
+      "test": "snellen",
+      "language": "",
+      "question_number": 3
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 22,
+    "fields": {
+      "question": "C",
+      "image": "",
+      "option_one": "C",
+      "option_two": "O",
+      "option_three": "D",
+      "option_four": "P",
+      "answer": "C",
+      "size": 19,
+      "test": "snellen",
+      "language": "",
+      "question_number": 4
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 23,
+    "fields": {
+      "question": "T",
+      "image": "",
+      "option_one": "F",
+      "option_two": "L",
+      "option_three": "I",
+      "option_four": "T",
+      "answer": "T",
+      "size": 15,
+      "test": "snellen",
+      "language": "",
+      "question_number": 5
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 24,
+    "fields": {
+      "question": "Z",
+      "image": "",
+      "option_one": "F",
+      "option_two": "L",
+      "option_three": "N",
+      "option_four": "Z",
+      "answer": "Z",
+      "size": 12,
+      "test": "snellen",
+      "language": "",
+      "question_number": 6
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 25,
+    "fields": {
+      "question": "P",
+      "image": "",
+      "option_one": "F",
+      "option_two": "R",
+      "option_three": "D",
+      "option_four": "P",
+      "answer": "P",
+      "size": 9,
+      "test": "snellen",
+      "language": "",
+      "question_number": 7
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 26,
+    "fields": {
+      "question": "D",
+      "image": "",
+      "option_one": "O",
+      "option_two": "D",
+      "option_three": "C",
+      "option_four": "P",
+      "answer": "D",
+      "size": 7,
+      "test": "snellen",
+      "language": "",
+      "question_number": 8
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 27,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_1_12.png",
+      "option_one": "22",
+      "option_two": "12",
+      "option_three": "21",
+      "option_four": "42",
+      "answer": "12",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 1
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 28,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_2_8.png",
+      "option_one": "8",
+      "option_two": "Здесь нет чисел",
+      "option_three": "3",
+      "option_four": "2",
+      "answer": "8",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 2
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 29,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_3_29.png",
+      "option_one": "28",
+      "option_two": "29",
+      "option_three": "Здесь нет чисел",
+      "option_four": "70",
+      "answer": "29",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 3
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 30,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_4_5.png",
+      "option_one": "2",
+      "option_two": "6",
+      "option_three": "Здесь нет чисел",
+      "option_four": "5",
+      "answer": "5",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 4
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 31,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_5_3.png",
+      "option_one": "8",
+      "option_two": "Здесь нет чисел",
+      "option_three": "3",
+      "option_four": "5",
+      "answer": "3",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 5
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 32,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_6_15.png",
+      "option_one": "15",
+      "option_two": "Здесь нет чисел",
+      "option_three": "16",
+      "option_four": "17",
+      "answer": "15",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 6
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 33,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_7_74.png",
+      "option_one": "77",
+      "option_two": "74",
+      "option_three": "21",
+      "option_four": "Здесь нет чисел",
+      "answer": "74",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 7
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 34,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_8_6.png",
+      "option_one": "6",
+      "option_two": "Здесь нет чисел",
+      "option_three": "8",
+      "option_four": "5",
+      "answer": "6",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 8
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 35,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_9_45.png",
+      "option_one": "Здесь нет чисел",
+      "option_two": "45",
+      "option_three": "15",
+      "option_four": "75",
+      "answer": "45",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 9
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 36,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_10_5.png",
+      "option_one": "6",
+      "option_two": "3",
+      "option_three": "5",
+      "option_four": "Здесь нет чисел",
+      "answer": "5",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 10
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 37,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_11_7.png",
+      "option_one": "1",
+      "option_two": "7",
+      "option_three": "4",
+      "option_four": "Здесь нет чисел",
+      "answer": "7",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 11
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 38,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_12_16.png",
+      "option_one": "16",
+      "option_two": "15",
+      "option_three": "18",
+      "option_four": "Здесь нет чисел",
+      "answer": "16",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 12
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 39,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_13_73.png",
+      "option_one": "13",
+      "option_two": "43",
+      "option_three": "73",
+      "option_four": "Здесь нет чисел",
+      "answer": "73",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 13
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 40,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_14_nothing.png",
+      "option_one": "2",
+      "option_two": "5",
+      "option_three": "6",
+      "option_four": "Здесь нет чисел",
+      "answer": "Здесь нет чисел",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 14
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 41,
+    "fields": {
+      "question": "",
+      "image": "test_image/plate_15_nothing.png",
+      "option_one": "15",
+      "option_two": "5",
+      "option_three": "45",
+      "option_four": "Здесь нет чисел",
+      "answer": "Здесь нет чисел",
+      "size": 0,
+      "test": "Ishihara",
+      "language": "russian",
+      "question_number": 15
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 42,
+    "fields": {
+      "question": "",
+      "image": "test_image/amsler_grid.jpg",
+      "option_one": "Линии волнистые и кривые",
+      "option_two": "Квадраты отличаются размерами или формой",
+      "option_three": "Линии отсутствуют, размыты или бесцветны",
+      "option_four": "Все одинаково",
+      "answer": "",
+      "size": 0,
+      "test": "macular_degeneration",
+      "language": "russian",
+      "question_number": 1
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 43,
+    "fields": {
+      "question": "",
+      "image": "test_image/astigmatism_1.jpg",
+      "option_one": "Имеются размытые линии",
+      "option_two": "Все линии одинаковы",
+      "option_three": "",
+      "option_four": "",
+      "answer": "",
+      "size": 0,
+      "test": "astigmatism",
+      "language": "russian",
+      "question_number": 1
+    }
+  },
+  {
+    "model": "AplikacjaBadaniaWadWzroku.Test",
+    "pk": 44,
+    "fields": {
+      "question": "",
+      "image": "test_image/astigmatism_2.jpg",
+      "option_one": "Имеются размытые линии",
+      "option_two": "Все линии одинаковы",
+      "option_three": "",
+      "option_four": "",
+      "answer": "",
+      "size": 0,
+      "test": "astigmatism",
+      "language": "russian",
+      "question_number": 2
+    }
+  }
+]

@@ -1,0 +1,54 @@
+{% extends 'AplikacjaBadaniaWadWzroku/../AplikacjaBadaniaWadWzroku/base.html' %}
+{% load static i18n %}
+{% load index %}
+
+{% block title %}
+    {{ header_text }}
+{% endblock %}
+
+{% block content %}
+    <div id="page-wrap">
+
+		<h1>{{ header_text }}</h1>
+
+		<form method="post" id="quiz">
+            {% csrf_token %}
+            <ol>
+                {% for test in test_database %}
+                <li>
+                    <div class="col-md-4">
+                    {% if test.test == 'astigmatism' or test.test == 'Ishihara' or test.test == 'macular_degeneration' %}
+                     <img src="{{ test.image.url }}" class="img-responsive" {% if test.test == 'macular_degeneration' %} style="width: {{ image_size_px }}px; height: {{ image_size_px }}px; float: left; margin-right: 10px;" {% else %} style="width: 400%; float: left; margin-right: 10px;" {% endif %} />
+                    {% elif test.test == 'snellen' %}
+                        <p class="snellen" style="font-size: {{ letter_size_px_list|index:forloop.counter0 }}px; font-family: Eyechart, sans-serif;">{{  test.question }}</p>
+                    {% elif test.test == 'dry eye' %}
+                        <h3>{{  test.question }}</h3>
+                    {% endif %}
+                        <div>
+                            <input type="radio" name="question-{{ test.question_number }}-answers"  id="question-{{ test.question_number }}-answers-A"  value="{{  test.option_one }}" />
+                            <label for="question-{{ test.question_number }}-answers-A" > {{  test.option_one }} </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-{{ test.question_number }}-answers"  id="question-{{ test.question_number }}-answers-B" value="{{  test.option_two }}" />
+                            <label for="question-{{ test.question_number }}-answers-B" > {{  test.option_two }}</label>
+                        </div>
+                    {% if test.test != 'astigmatism' %}
+                        <div>
+                            <input type="radio" name="question-{{ test.question_number }}-answers" id="question-{{ test.question_number }}-answers-C" value="{{  test.option_three }}" />
+                            <label for="question-{{ test.question_number }}-answers-C"> {{  test.option_three }}</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-{{ test.question_number }}-answers" id="question-{{ test.question_number }}-answers-D" value="{{  test.option_four }}" />
+                            <label for="question-{{ test.question_number }}-answers-D"> {{  test.option_four }}</label>
+                        </div>
+                    {% endif %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ol>
+            <input type="submit" class="submit-test" value="{% trans 'Закончить тест' %}" />
+		</form>
+	</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'AplikacjaBadaniaWadWzroku/../AplikacjaBadaniaWadWzroku/base.html' %}
+{% load static i18n %}
+
+{% block title %}
+    {% trans 'Страница результатов' %}
+{% endblock %}
+
+{% block content %}
+    <h1>{% trans 'Страница результатов' %}</h1>
+    <h2>{% trans result_text %}</h2>
+    <br>
+    <br>
+    {% if test == 'snellen_test' %}
+        <h3>{% trans 'Описание результата'%}</h3>
+        <p>{% trans 'Числитель результата говорит о том, на каком расстоянии проводился тест, знаменатель обозначает расстояние, на котором нормальный глаз может воспринимать букву' %}</p>
+    
+    {% endif %} 
+{% endblock %}
