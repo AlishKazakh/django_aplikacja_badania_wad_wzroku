@@ -194,18 +194,28 @@ def test_dry_eye(request):
 
 
 def results(request, test, result):
-    if test == 'accommodation':
-        if int(result) in range(27, 37):
-            result_text = "В Вашем случае наличие спазма аккоммодации маловероятно"
-        elif int(result) in range(19, 27):
-            result_text = "У Вас средняя вероятность наличия спазма аккоммодации"
-        elif int(result) in range(19):
-            result_text = "У Вас большая вероятность наличия спазма аккоммодации"
+    if test == 'dry_eye':
+        if int(result) in range(24, 37):
+            if get_language() == 'ru':
+                result_text = "В Вашем случае наличие синдрома сухого глаза маловероятно"
+            elif get_language() == 'pl':
+                result_text = "Masz małe prawdopodobieństwo posiadania zespołu suchego oka"
+        elif int(result) in range(13, 24):
+            if get_language() == 'ru':
+                result_text = "У Вас средняя вероятность наличия синдрома сухого глаза"
+            elif get_language() == 'pl':
+                result_text = "Masz średnie prawdopodobieństwo posiadania zespołu suchego oka"
+        elif int(result) in range(13):
+            if get_language() == 'ru':
+                result_text = "У Вас большая вероятность наличия синдрома сухого глаза"
+            elif get_language() == 'pl':
+                result_text = "Masz duże prawdopodobieństwo posiadania zespołu suchego oka"
         else:
             result_text = "Some Error"
     elif test == "macular_degeneration":
         result_text = result
     elif test == "ishihara":
+        right_answers = result
         if int(result) in range(13, 16):
             if get_language() == 'ru':
                 result_text = "В Вашем случае наличие дальтонизма маловероятно"
@@ -274,5 +284,5 @@ def results(request, test, result):
         result_text = "No such test"
 
     print(result.strip())
-    context = {'result_text': _(result_text), 'test': test}
+    context = {'result_text': result_text, 'test': test, 'right_answers': right_answers}
     return render(request, 'AplikacjaBadaniaWadWzroku/results.html', context)
