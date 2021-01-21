@@ -7,23 +7,43 @@
 
 
 *					{ margin: 0; padding: 0; }
-body				{ font: 14px Georgia, serif; }
+body				{ font: 14px Comfortaa, serif; }
 
-h1                  { margin: 25px 0; font: 40px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
+h1                  { margin: 25px 0; font: 40px Comfortaa, Serif; text-transform: uppercase; letter-spacing: 3px; }
 
-h2                  { margin: 25px 0; font: 30px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
+h2                  { margin: 25px 0; font: 20px Comfortaa, Serif; letter-spacing: 3px; line-height: 1.5}
 
 
 
 p { margin: 25px 0;
-    font: 15px Georgia, Serif;
-    text-transform: uppercase;
+    font: 15px Comfortaa, Serif;
+
     letter-spacing: 3px;
 }
 
+.container-test {
+    background-color: #d1d1d1;
+    color: #d1d1d1;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Comfortaa, Serif;
+    max-width: 700px
+}
+
+.btn-sm:hover {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,181,82,1) 0%, rgba(18,213,151,1) 100%);
+    color: white;
+    border-color:white;
+}
+
+.btn-sm {
+
+    color: #12d597;
+    border-color:#12d597;
+}
+
 ul li { margin: 25px 0;
-    font: 15px Georgia, Serif;
-    text-transform: uppercase;
+    font: 15px Comfortaa, Serif;
     letter-spacing: 3px;
 }
 
@@ -40,7 +60,7 @@ input.submit-test {
     border:0.15em solid #CCCCCC;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Segoe UI','Roboto',sans-serif;
+    font-family:'Segoe UI',Comfortaa,sans-serif;
     font-weight:400;
     color:#000000;
     background-color:#CCCCCC;

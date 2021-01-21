@@ -1,14 +1,18 @@
 {% extends 'AplikacjaBadaniaWadWzroku/../AplikacjaBadaniaWadWzroku/base.html' %}
 {% load i18n %}
+{% load static %}
+{% load index %}
 
 {% block title %}
     {% trans 'Страница тестов' %}
 {% endblock %}
 
 {% block content %}
-    <section class="jumbotron text-center">
+
+
+    <section class="jumbotron text-center" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,181,82,1) 0%, rgba(18,213,151,1) 100%);">
         <div class="container">
-          <h1>{% trans "Тесты" %}</h1>
+          <h1 style="color: white; font-weight: 900 !important;">{% trans "Тесты" %}</h1>
         </div>
       </section>
     <div class="album py-5 bg-light">
@@ -17,12 +21,19 @@
           {% for key, value in tests.items %}
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">{{ key }}</text></svg>
+                    <img src="{% static value|index:1 %}" alt="">
                 <div class="card-body">
-                  <p class="card-text">1. {% trans 'СЯДЬТЕ НА РАССТОЯНИИ 50 СМ ОТ КОМПЬЮТЕРА.' %} <br> 2. {% trans 'ЕСЛИ ВЫ НОСИТЕ ОЧКИ, НАДЕНЬТЕ ИХ.' %} <br> 3. {% trans 'ОТВЕТЬТЕ НА ВОПРОСЫ ТЕСТА.' %}</p>
+                    <p class="card-text" style="text-align: center"> {{ key }} </p>
+                  {% if value|index:0 == 'astigmatism' %}<p class="card-text">1. {% trans 'Сядьте на расстоянии 50 см от компьютера.' %} <br> <br>2. {% trans 'Если Вы носите очки, снимите их.' %} <br><br> 3. {% trans 'Ответьте на вопросы теста.' %}</p><br>
+                    {% elif value|index:0 == 'color_blindness' %}<p class="card-text">1. {% trans 'Сядьте на расстоянии 75 см от компьютера.' %} <br> <br>2. {% trans 'Если Вы носите очки, наденьте их.' %} <br><br> 3. {% trans 'Ответьте на вопросы теста.' %}</p><br>
+                    {% elif value|index:0 == 'visual_acuity' %}<p class="card-text" style="font-size: 12px">1. {% trans 'Сядьте на расстоянии 1 метра от компьютера.' %} <br> <br>2. {% trans 'Если Вы носите очки, снимите их.' %} <br><br> 3. {% trans 'Сначала закройте правый глаз и ответьте на вопросы теста.' %} <br><br> 4. {% trans 'Закройте левый глаз и ответьте на вопросы теста.' %}</p><br>
+                    {% elif value|index:0 == 'macular_degeneration' %}<p class="card-text">1. {% trans 'Сядьте на расстоянии 33 см от компьютера.' %} <br> <br>2. {% trans 'Если Вы носите очки, снимите их.' %} <br><br> 3. {% trans 'Ответьте на вопросы теста.' %}</p><br>
+                    {% elif value|index:0 == 'dry_eye' %}<p class="card-text"> 1. {% trans 'Ответьте на вопросы теста.' %}</p><br>
+                    {% endif %}
+
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a class="btn btn-sm btn-outline-secondary" {% if value != 'visual_acuity' %}href="/tests/{{ value }}" {% else %}href="{% url 'visual-acuity-test'  eye current_result  %}"{% endif %}>{% trans 'Начать тест' %}</a>
+                      <a class="btn btn-sm btn-outline-secondary" {% if value|index:0 != 'visual_acuity' %}href="/tests/{{ value|index:0 }}" {% else %}href="{% url 'visual-acuity-test'  eye current_result  %}"{% endif %}>{% trans 'Начать тест' %}</a>
                     </div>
                   </div>
                 </div>

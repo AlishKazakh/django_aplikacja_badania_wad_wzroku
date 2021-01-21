@@ -10,6 +10,7 @@ urlpatterns = [
     path('exercises/', views.exercises),
     path('information-diseases/', views.information_diseases),
     path('information-diseases/<value>', views.information_diseases_all, name='information-about-disease'),
+    path('information-diseases/astigmatism', views.information_diseases_all, name='astigmatism'),
     path('tests/astigmatism/', views.test_astigmatism),
     path('tests/color_blindness/', views.test_color_blindness),
     path('tests/macular_degeneration/', views.test_macular_degeneration),

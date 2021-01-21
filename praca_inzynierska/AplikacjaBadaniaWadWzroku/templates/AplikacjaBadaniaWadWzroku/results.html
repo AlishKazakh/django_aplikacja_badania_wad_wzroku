@@ -6,14 +6,19 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{% trans 'Страница результатов' %}</h1>
-    <h2>{% trans result_text %}</h2>
+    <section class="jumbotron text-center" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,181,82,1) 0%, rgba(18,213,151,1) 100%);">
+        <div class="container">
+          <h1 style="color: white; font-weight: 900 !important;">{% trans 'Страница результатов' %}</h1>
+        </div>
+    </section>
+
+    <div style="width: 50%; margin: auto"><p style="text-align: center; line-height: 200%; font-size: 18px">{% trans result_text %}</p></div>
     <br>
     <br>
     {% if test == 'snellen_test' %}
-        <h3>{% trans 'Описание результата'%}</h3>
-        <p>{% trans 'Числитель результата говорит о том, на каком расстоянии проводился тест, знаменатель обозначает расстояние, на котором нормальный глаз может воспринимать букву' %}</p>
+        <h3 style="text-align: center">{% trans 'Описание результата'%}</h3>
+        <div style="width: 50%; margin: auto"><p style="text-align: center; line-height: 200%; font-size: 20px">{% trans 'Числитель результата говорит о том, на каком расстоянии проводился тест, знаменатель обозначает расстояние, на котором нормальный глаз может воспринимать букву' %}</p></div>
     {% elif test == 'ishihara' %}
-        <h1>{% trans 'Ваш результат: ' %}{{ right_answers }}</h1>
+        <p style="text-align: center; line-height: 200%; font-size: 20px">{% trans 'Ваш результат: ' %}{{ right_answers }}</p>
     {% endif %} 
 {% endblock %}

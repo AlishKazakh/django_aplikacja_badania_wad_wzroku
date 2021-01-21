@@ -2,5 +2,5 @@ from django import template
 register = template.Library()
 
 @register.filter
-def index(indexable, i):
-    return indexable[i]
+def index(some_list, i):
+    return some_list[i]

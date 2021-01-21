@@ -5,17 +5,28 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{% trans 'Страница Упражнений' %}</h1>
-    <div id="page-wrap">
-        {% for exercise in exercises_context %}
-            <div>
-                <h2>{% trans 'Упражнение №' %}{{ exercise.exercise_number }}.</h2>
-                <p>{{ exercise.text_exercise }}</p>
-                {% if exercise.image_exercise != '' %}
-                    <img src="{{ exercise.image_exercise.url }}" class="img-responsive" style="width: 60%; float: left; margin-right: 10px;" />
-                {% endif %}
-            </div>
-            <hr>
-        {% endfor %}
+
+    <section class="jumbotron text-center" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,181,82,1) 0%, rgba(18,213,151,1) 100%);">
+        <div class="container">
+          <h1 style="color: white; font-weight: 900 !important;">{% trans 'Страница Упражнений' %}</h1>
+        </div>
+    </section>
+    <div class="album py-5 bg-light">
+        <div id="page-wrap">
+            {% for exercise in exercises_context %}
+                 <div class="container-test mt-sm-5 my-1" style="box-shadow: 0px -1px 9px 0px rgba(0,0,0,0.17)">
+                    <div style="margin: auto; width: 70%">
+                        <h2 style="text-align: center; color: black">{% trans 'Упражнение №' %}{{ exercise.exercise_number }}.</h2>
+                        <p style="text-align: center; color: black">{{ exercise.text_exercise }}</p>
+                        <div style="margin: auto; width: 70%">
+                            {% if exercise.image_exercise != '' %}
+                                <img src="{{ exercise.image_exercise.url }}"  style="width: 100%; margin-right: auto; margin-left: auto;" />
+                            {% endif %}
+                        </div>
+                    </div>
+                 </div>
+
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}

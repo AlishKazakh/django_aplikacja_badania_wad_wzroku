@@ -3,7 +3,8 @@ from django.utils.translation import gettext as _
 from django.views.i18n import get_language
 from .models import *
 from .dpi_calculator import calculate_dpi, calculate_pixel_ratio
-
+import os
+from praca_inzynierska import settings
 
 
 def index(request):
@@ -11,9 +12,9 @@ def index(request):
 
 
 def tests(request):
-    tests_ru = {"Астигматизм": "astigmatism", "Дальтонизм": "color_blindness", "Острота зрения": "visual_acuity", "Макулодистрофия": "macular_degeneration", "Синдром сухого глаза": "dry_eye"}
-    tests_pl = {"Astygmatyzm": "astigmatism", "Daltonizm": "color_blindness", "Ostrość wzroku": "visual_acuity",
-                "Zwyrodnienie plamki żółtej": "macular_degeneration", "Zespół suchego oka": "dry_eye"}
+    tests_ru = {"Астигматизм": ["astigmatism", "images/astigmatism.png"], "Дальтонизм": ["color_blindness", "images/color_blindness.png"], "Острота зрения": ["visual_acuity", "images/visual_acuity.png"], "Макулодистрофия": ["macular_degeneration", "images/macular_degeneration.png"], "Синдром сухого глаза": ["dry_eye", "images/dry_eye.png"]}
+    tests_pl = {"Astygmatyzm": ["astigmatism", "images/astigmatism.png"], "Daltonizm": ["color_blindness", "images/color_blindness.png"], "Ostrość wzroku": ["visual_acuity", "images/visual_acuity.png"],
+                "Zwyrodnienie plamki żółtej": ["macular_degeneration", "images/macular_degeneration.png"], "Zespół suchego oka": ["dry_eye", "images/dry_eye.png"]}
     if get_language() == 'ru':
         context = {'tests': tests_ru, 'eye': 'right', 'current_result': ' '}
     elif get_language() == 'pl':
@@ -28,10 +29,11 @@ def exercises(request):
 
 
 def information_diseases(request):
-    diseases_ru = {"Астигматизм": "astigmatism", "Дальтонизм": "color_blindness",
-                "Макулодистрофия": "macular_degeneration", "Синдром сухого глаза": "dry_eye"}
-    diseases_pl = {"Astygmatyzm": "astigmatism", "Daltonizm": "color_blindness",
-                "Zwyrodnienie plamki żółtej": "macular_degeneration", "Zespół suchego oka": "dry_eye"}
+
+    diseases_ru = {"Астигматизм": ["astigmatism", "images/astigmatism.png"], "Дальтонизм": ["color_blindness", "images/color_blindness.png"],
+                "Макулодистрофия": ["macular_degeneration", "images/macular_degeneration.png"], "Синдром сухого глаза": ["dry_eye", "images/dry_eye.png"]}
+    diseases_pl = {"Astygmatyzm": ["astigmatism", "images/astigmatism.png"], "Daltonizm": ["color_blindness", "images/color_blindness.png"],
+                "Zwyrodnienie plamki żółtej": ["macular_degeneration", "images/macular_degeneration.png"], "Zespół suchego oka": ["dry_eye", "images/dry_eye.png"]}
     if get_language() == 'ru':
         context = {'diseases': diseases_ru}
     elif get_language() == 'pl':
@@ -63,7 +65,7 @@ def test_visual_acuity(request, eye, current_result):
     print(calculate_pixel_ratio())
     for test in snellen_test:
         letter_size_px = calculate_dpi() * test.size / 25.4
-        letter_size_px_list.append(round(letter_size_px))
+        letter_size_px_list.append(int(letter_size_px))
     print(letter_size_px_list)
     if request.method == 'POST':
         test_result = ''
@@ -100,22 +102,22 @@ def test_astigmatism(request):
             selected_option = request.POST['question-{}-answers'.format(test.question_number)]
             if selected_option == test.option_two:
                 if get_language() == 'ru':
-                    score_list.append("В Вашем случае наличие астигматизма маловероятно")
+                    score_list.append("В Вашем случае наличие астигматизма МАЛОВЕРОЯТНО")
                 elif get_language() == 'pl':
-                    score_list.append("Masz małe prawdopodobieństwo posiadania astygmatyzmu")
+                    score_list.append("Masz MAłE prawdopodobieństwo posiadania astygmatyzmu")
             elif selected_option != test.option_two:
                 if get_language() == 'ru':
-                    score_list.append("У Вас большая вероятность наличия астигматизма")
+                    score_list.append("У Вас БОЛЬШАЯ вероятность наличия астигматизма")
                 elif get_language() == 'pl':
-                    score_list.append("Masz duże prawdopodobieństwo posiadania astygmatyzmu")
-        if "У Вас большая вероятность наличия астигматизма" in score_list:
-            test_results = "У Вас большая вероятность наличия астигматизма"
-        elif "Masz duże prawdopodobieństwo posiadania astygmatyzmu" in score_list:
-            test_results = "Masz duże prawdopodobieństwo posiadania astygmatyzmu"
-        elif get_language() == 'pl' and "Masz duże prawdopodobieństwo posiadania astygmatyzmu" not in score_list:
-            test_results = "Masz małe prawdopodobieństwo posiadania astygmatyzmu"
+                    score_list.append("Masz DUŻE prawdopodobieństwo posiadania astygmatyzmu")
+        if "У Вас БОЛЬШАЯ вероятность наличия астигматизма" in score_list:
+            test_results = "У Вас БОЛЬШАЯ вероятность наличия астигматизма"
+        elif "Masz DUŻE prawdopodobieństwo posiadania astygmatyzmu" in score_list:
+            test_results = "Masz DUŻE prawdopodobieństwo posiadania astygmatyzmu"
+        elif get_language() == 'pl' and "Masz DUŻE prawdopodobieństwo posiadania astygmatyzmu" not in score_list:
+            test_results = "Masz MAłE prawdopodobieństwo posiadania astygmatyzmu"
         else:
-            test_results = "В Вашем случае наличие астигматизма маловероятно"
+            test_results = "В Вашем случае наличие астигматизма МАЛОВЕРОЯТНО"
         return redirect(results, result=test_results, test=astigmatism_test_redirect)
     context = {'test_database': astigmatism_test, 'header_text': header_text}
     return render(request, 'AplikacjaBadaniaWadWzroku/tests.html', context)
@@ -156,14 +158,14 @@ def test_macular_degeneration(request):
             selected_option = request.POST['question-{}-answers'.format(test.question_number)]
             if selected_option == test.option_four:
                 if get_language() == 'ru':
-                    test_results = "В Вашем случае наличие макулодистрофии маловероятно"
+                    test_results = "В Вашем случае наличие макулодистрофии МАЛОВЕРОЯТНО"
                 elif get_language() == 'pl':
-                    test_results = "Masz małe prawdopodobieństwo posiadania zwyrodnienia plamki żółtej"
+                    test_results = "Masz MAłE prawdopodobieństwo posiadania zwyrodnienia plamki żółtej"
             elif selected_option != test.option_four:
                 if get_language() == 'ru':
-                    test_results = "У Вас большая вероятность наличия макулодистрофии"
+                    test_results = "У Вас БОЛЬШАЯ вероятность наличия макулодистрофии"
                 elif get_language() == 'pl':
-                    test_results = "Masz duże prawdopodobieństwo posiadania zwyrodnienia plamki żółtej"
+                    test_results = "Masz DUŻE prawdopodobieństwo posiadania zwyrodnienia plamki żółtej"
         print(test_results)
         return redirect(results, result=test_results, test=macular_degeneration_test_redirect)
     context = {'test_database': macular_degeneration_test, 'header_text': header_text, 'image_size_px': image_size_px}
@@ -189,54 +191,59 @@ def test_dry_eye(request):
             elif selected_option == "Никогда":
                 test_results += 4
         print(test_results)
+        return redirect(results, result=test_results, test="dry_eye")
     context = {'test_database' : dry_eye_test, 'header_text': header_text}
     return render(request, 'AplikacjaBadaniaWadWzroku/tests.html', context)
 
 
 def results(request, test, result):
     if test == 'dry_eye':
+        right_answers = ''
         if int(result) in range(24, 37):
             if get_language() == 'ru':
-                result_text = "В Вашем случае наличие синдрома сухого глаза маловероятно"
+                result_text = "В Вашем случае наличие синдрома сухого глаза МАЛОВЕРОЯТНО"
             elif get_language() == 'pl':
-                result_text = "Masz małe prawdopodobieństwo posiadania zespołu suchego oka"
+                result_text = "Masz MAłE prawdopodobieństwo posiadania zespołu suchego oka"
         elif int(result) in range(13, 24):
             if get_language() == 'ru':
-                result_text = "У Вас средняя вероятность наличия синдрома сухого глаза"
+                result_text = "У Вас СРЕДНЯЯ вероятность наличия синдрома сухого глаза"
             elif get_language() == 'pl':
-                result_text = "Masz średnie prawdopodobieństwo posiadania zespołu suchego oka"
+                result_text = "Masz ŚREDNIE prawdopodobieństwo posiadania zespołu suchego oka"
         elif int(result) in range(13):
             if get_language() == 'ru':
-                result_text = "У Вас большая вероятность наличия синдрома сухого глаза"
+                result_text = "У Вас БОЛЬШАЯ вероятность наличия синдрома сухого глаза"
             elif get_language() == 'pl':
-                result_text = "Masz duże prawdopodobieństwo posiadania zespołu suchego oka"
+                result_text = "Masz DUŻE prawdopodobieństwo posiadania zespołu suchego oka"
         else:
             result_text = "Some Error"
     elif test == "macular_degeneration":
+        right_answers = ''
         result_text = result
     elif test == "ishihara":
         right_answers = result
         if int(result) in range(13, 16):
             if get_language() == 'ru':
-                result_text = "В Вашем случае наличие дальтонизма маловероятно"
+                result_text = "В Вашем случае наличие дальтонизма МАЛОВЕРОЯТНО"
             elif get_language() == 'pl':
-                result_text = "Masz małe prawdopodobieństwo posiadania daltonizmu"
+                result_text = "Masz MAłE prawdopodobieństwo posiadania daltonizmu"
         elif int(result) in range(10, 13):
             if get_language() == 'ru':
-                result_text = "У Вас средняя вероятность наличия дальтонизма"
+                result_text = "У Вас СРЕДНЯЯ вероятность наличия дальтонизма"
             elif get_language() == 'pl':
-                result_text = "Masz średnie prawdopodobieństwo posiadania daltonizmu"
+                result_text = "Masz ŚREDNIE prawdopodobieństwo posiadania daltonizmu"
         elif int(result) in range(10):
             if get_language() == 'ru':
-                result_text = "У Вас большая вероятность наличия дальтонизма"
+                result_text = "У Вас БОЛЬШАЯ вероятность наличия дальтонизма"
             elif get_language() == 'pl':
-                result_text = "Masz duże prawdopodobieństwo posiadania daltonizmu"
+                result_text = "Masz DUŻE prawdopodobieństwo posiadania daltonizmu"
         else:
             result_text = "Some Error"
     elif test == "astigmatism":
+        right_answers = ''
         result_text = result
 
     elif test == "snellen_test":
+        right_answers = ''
         if '0' in result.strip()[:8]:
             if result.strip()[:8].index('0') == 0:
                 right_eye_result = '<1/10'

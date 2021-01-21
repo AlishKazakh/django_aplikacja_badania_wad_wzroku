@@ -13,31 +13,32 @@
 </head>
 <body>
 
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Aplikacja Badania Wad Wzroku</h5>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,181,82,1) 0%, rgba(18,213,151,1) 100%);">
+      <h5 class="my-0 mr-md-auto font-weight-normal" style="color: white; font-weight: bold !important;"><a class="p-2 text-white" href="/">Aplikacja Badania Wad Wzroku</a></h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="/" >{% trans 'Главная страница' %}</a>
-        <a class="p-2 text-dark" href="/tests" >{% trans 'Тесты' %}</a>
-        <a class="p-2 text-dark" href="/exercises" >{% trans 'Упражнения' %}</a>
-        <a class="p-2 text-dark" href="/information-diseases" >{% trans 'Информация о заболеваниях' %}</a>
-          <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-                <input name="next" type="hidden" value="{{ redirect_to }}">
-                <select name="language">
-                    {% get_current_language as LANGUAGE_CODE %}
-                    {% get_available_languages as LANGUAGES %}
-                    {% get_language_info_list for LANGUAGES as languages %}
-                    {% for language in languages %}
-                        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
-                                selected{% endif %}>
-                            {{ language.name_local }} ({{ language.code }})
-                        </option>
-                    {% endfor %}
-                </select>
-                <input type="submit" value="Go">
-            </form>
+        <a class="p-2 text-white" href="/">{% trans 'Главная страница' %}</a>
+        <a class="p-2 text-white" href="/tests" >{% trans 'Тесты' %}</a>
+        <a class="p-2 text-white" href="/exercises" >{% trans 'Упражнения' %}</a>
+        <a class="p-2 text-white" href="/information-diseases" >{% trans 'Информация о заболеваниях' %}</a>
+
 
 
       </nav>
+        <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+            <input name="next" type="hidden" value="{{ redirect_to }}">
+            <select name="language">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
+                            selected{% endif %}>
+                        {{ language.name_local }} ({{ language.code }})
+                    </option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
     {% block content %}{% endblock %}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-25 12:45+0100\n"
+"POT-Creation-Date: 2021-01-04 15:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgid "Главная страница"
 msgstr "Strona główna"
 
 #: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\base.html:20
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:11
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:13
 msgid "Тесты"
 msgstr "Testy"
 
@@ -33,37 +33,32 @@ msgid "Упражнения"
 msgstr "Ćwiczenia"
 
 #: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\base.html:22
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\information_diseases_menu.html:11
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\information_diseases_menu.html:12
 msgid "Информация о заболеваниях"
 msgstr "Informacja o wadach wzroku"
 
 #: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\exercises.html:4
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\exercises.html:8
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\exercises.html:11
 msgid "Страница Упражнений"
 msgstr "Strona ćwiczeń"
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\exercises.html:12
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\exercises.html:18
 msgid "Упражнение №"
 msgstr "Ćwiczenie "
 
 #: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\index1.html:5
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\index1.html:9
 msgid "Главная Страница"
 msgstr "Strona główna"
-
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\index1.html:10
-msgid "Просто Текст"
-msgstr "Po prostu tekst"
 
 #: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\information_diseases.html:5
 msgid "Информация про "
 msgstr "Informacja o"
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\information_diseases.html:13
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\information_diseases.html:19
 msgid "Симптомы"
 msgstr "Objawy"
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\information_diseases.html:20
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\information_diseases.html:30
 msgid "Лечение"
 msgstr "Leczenie"
 
@@ -71,20 +66,20 @@ msgstr "Leczenie"
 msgid "Информационная Страница"
 msgstr "Strona informacji"
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\information_diseases_menu.html:24
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\information_diseases_menu.html:26
 msgid "Выбрать"
 msgstr "Wybierz"
 
 #: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\results.html:5
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\results.html:9
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\results.html:11
 msgid "Страница результатов"
 msgstr "Strona wyników"
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\results.html:14
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\results.html:19
 msgid "Описание результата"
 msgstr "Opis wyników"
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\results.html:15
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\results.html:20
 msgid ""
 "Числитель результата говорит о том, на каком расстоянии проводился тест, "
 "знаменатель обозначает расстояние, на котором нормальный глаз может "
@@ -93,11 +88,11 @@ msgstr ""
 "Licznik wyniku mówi o odległości, w której przeprowadzono test, mianownik "
 "oznacza odległość, w której normalne oko może dostrzec literę"
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\results.html:17
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\results.html:22
 msgid "Ваш результат: "
 msgstr "Twój wynik: "
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests.html:51
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests.html:59
 msgid "Закончить тест"
 msgstr "Zakończ test"
 
@@ -105,19 +100,48 @@ msgstr "Zakończ test"
 msgid "Страница тестов"
 msgstr "Strona testów"
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:22
-msgid "СЯДЬТЕ НА РАССТОЯНИИ 50 СМ ОТ КОМПЬЮТЕРА."
-msgstr "USIĄDŹ 50 CM OD KOMPUTERA."
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:34
+msgid "Сядьте на расстоянии 50 см от компьютера."
+msgstr "Usiądź 50 cm od komputera."
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:22
-msgid "ЕСЛИ ВЫ НОСИТЕ ОЧКИ, НАДЕНЬТЕ ИХ."
-msgstr "JEŚLI NOSISZ OKULARY, ZAŁÓŻ JE."
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:34
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:36
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:37
+msgid "Если Вы носите очки, снимите их."
+msgstr "Jeśli nosisz okulary, zdejmij je."
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:22
-msgid "ОТВЕТЬТЕ НА ВОПРОСЫ ТЕСТА."
-msgstr "ODPOWIEDZ NA PYTANIA TESTOWE."
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:34
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:35
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:37
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:38
+msgid "Ответьте на вопросы теста."
+msgstr "Odpowiedz na pytania testowe."
 
-#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:25
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:35
+msgid "Сядьте на расстоянии 75 см от компьютера."
+msgstr "Usiądź 75 cm od komputera."
+
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:35
+msgid "Если Вы носите очки, наденьте их."
+msgstr "Jeśli nosisz okulary, załóż je."
+
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:36
+msgid "Сядьте на расстоянии 1 метра от компьютера."
+msgstr "Usiądź 1 metr od komputera."
+
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:36
+msgid "Сначала закройте правый глаз и ответьте на вопросы теста."
+msgstr "Najpierw zamknij prawe oko i odpowiedz na pytania testowe."
+
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:36
+msgid "Закройте левый глаз и ответьте на вопросы теста."
+msgstr "Zamknij lewe oko i odpowiedz na pytania testowe."
+
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:37
+msgid "Сядьте на расстоянии 33 см от компьютера."
+msgstr "Usiądź 33 cm od komputera."
+
+#: .\AplikacjaBadaniaWadWzroku\templates\AplikacjaBadaniaWadWzroku\tests_menu.html:43
 msgid "Начать тест"
 msgstr "Rozpocznij test"
 
@@ -1320,6 +1344,18 @@ msgstr ""
 #: .\venv\Lib\site-packages\modeltranslation\widgets.py:25
 msgid "None"
 msgstr ""
+
+#~ msgid "Просто Текст"
+#~ msgstr "Po prostu tekst"
+
+#~ msgid "СЯДЬТЕ НА РАССТОЯНИИ 50 СМ ОТ КОМПЬЮТЕРА."
+#~ msgstr "USIĄDŹ 50 CM OD KOMPUTERA."
+
+#~ msgid "ЕСЛИ ВЫ НОСИТЕ ОЧКИ, НАДЕНЬТЕ ИХ."
+#~ msgstr "JEŚLI NOSISZ OKULARY, ZAŁÓŻ JE."
+
+#~ msgid "ОТВЕТЬТЕ НА ВОПРОСЫ ТЕСТА."
+#~ msgstr "ODPOWIEDZ NA PYTANIA TESTOWE."
 
 #~ msgid "Тест на астигматизм"
 #~ msgstr "Test astygmatyzmu"

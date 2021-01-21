@@ -6,23 +6,36 @@
 {% endblock %}
 
 {% block content %}
-    <h1 id="firstHeading" class="firstHeading" lang="en">{% trans test %}</h1>
-    <hr>
-    <p> {{ disease_description }}</p>
 
-    <h2>{% trans 'Симптомы' %}</h2>
-    <ol>
-    {% for symptom in disease_symptoms %}
-    <li>{{ symptom }}</li>
-    {% endfor %}
-    </ol>
+    <section class="jumbotron text-center" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,181,82,1) 0%, rgba(18,213,151,1) 100%);">
+        <div class="container">
+          <h1 style="color: white; font-weight: 900 !important;">{% trans test %}</h1>
+        </div>
+    </section>
 
-    <h2>{% trans 'Лечение' %}</h2>
-    <ol>
-    {% for treatment in disease_treatment %}
-    <li>{{ treatment }}</li>
-    {% endfor %}
-    </ol>
+    <div class="album py-5 bg-light">
+        <div style="width: 70%; margin: auto"><p style="text-align: center"> {{ disease_description }}</p></div>
+
+        <div style="margin: auto; width: 70%">
+            <h2 style="text-align: center">{% trans 'Симптомы' %}</h2>
+
+                <ul style="list-style-position: inside;">
+                    {% for symptom in disease_symptoms %}
+                        <li>{{ symptom }}</li>
+                    {% endfor %}
+                </ul>
+
+        </div>
+
+        <div style="margin: auto; width: 70%">
+            <h2 style="text-align: center">{% trans 'Лечение' %}</h2>
+            <ul style="list-style-position: inside; margin: 0; padding: 0;">
+                {% for treatment in disease_treatment %}
+                    <li style="list-style-type: none"> &nbsp; &nbsp; {{ treatment }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 
 {% endblock %}
 
